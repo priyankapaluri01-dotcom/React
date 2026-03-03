@@ -1,0 +1,18 @@
+package.json : the main configuration file  of the project.
+               Lists all the dependencies your project needs (like React, Vite).
+               Stores project metadata: name, version, scripts, license, etc.
+               Lets you run commands: e.g., npm start, npm run build
+package-lock.json : Automatically generated file by npm.
+                    Records exact versions of all installed packages, including nested dependencies.
+                    Ensures everyone who installs the  project gets exactly the same versions.
+                    Helps prevent bugs caused by different versions of the same library.
+                    it locks the version 
+                    
+
+(in simple words
+                    package.json → Your shopping list (what you want to buy) 
+                    package-lock.json → The exact items you bought with brand and version 
+Tree Shaking:Removes unused code from production bundle,Reduces final bundle size → faster websites/apps.
+Development Machine:where you write and test code
+Production Machine :Environment where the final app is deployed for users.
+Parcel : Zero-configuration web application bundler., Bundles JavaScript, CSS, images, TypeScript, and React projects.
