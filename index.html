@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcomee</title>
+
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+    <!-- React CDN -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script>
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+
+        let message = "";
+
+        function handleClick() {
+            message = "Button was clicked! ";
+            renderApp();
+        }
+
+        function renderApp() {
+            root.render(
+                React.createElement(
+                    "div",
+                    { className: "container" },
+
+                    React.createElement(
+                        "h1",
+                        { className: "mainHeading" },
+                        "How React renders effectively"
+                    ),
+
+                    React.createElement(
+                        "h2",
+                        { className: "subHeading" },
+                        "Understanding DOM integration in React"
+                    ),
+
+                    React.createElement(
+                        "button",
+                        { className: "btn", onClick: handleClick },
+                        "Click Me!"
+                    ),
+
+                    // Show paragraph ONLY if message exists
+                    message !== ""
+                        ? React.createElement(
+                            "p",
+                            { className: "message" },
+                            message
+                          )
+                        : null
+                )
+            );
+        }
+
+        renderApp();
+    </script>
+
+</body>
+</html>
