@@ -20,6 +20,6 @@ Finds differences
 Updates only the changed parts in the real DOM
 This comparison process is called  Diffing Algorithm
 Understood how rerendering works in event handling 
-
+Learnt overall process of rerendering works and how real dom and virtual dom works 
 
 
