@@ -1,0 +1,25 @@
+React needs a root container to control the UI
+Learnt react via CDN 
+What is CDN ? Content Delivery Network
+A CDN is a network of servers distributed across the world that deliver files (like JS, CSS, images) quickly to users based on their location.
+inculded cdn links into my basic html:5 code inorder to have a smooth renderings and rerenderings effectively 
+Learnt about ReactDOM.createRoot() which is a  DOM element where you are allowed to control the UI.
+How does it work internally : 
+                            Finds the real DOM element (<div id="root">)
+                            Creates a React root container
+                            Enables React’s new concurrent rendering features
+Normal DOM update:
+Change → Browser re-renders large part → Slower
+React way:
+Change → Compare → Update only what changed → Faster
+Reconciliation in React process by which React updates the real DOM efficiently when the state or props change.
+As updating the real DOM is slow we use Recnciliation inorder to make it faster 
+creates a new Virtual DOM
+Compares it with the previous Virtual DOM
+Finds differences
+Updates only the changed parts in the real DOM
+This comparison process is called  Diffing Algorithm
+Understood how rerendering works in event handling 
+
+
+
